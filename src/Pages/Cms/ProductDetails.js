@@ -24,16 +24,20 @@ const ProductDetails = () => {
     return productdetails ? (
         <div className="w-full h-calc-100vh-200px">
             <button
-                onClick={() => navigate(-1)}
+                onClick={() => navigate("/productlist")}
                 className="border border-black px-3 py-2 m-2 rounded-md font-semibold "
             >
                 Back
             </button>
             <div className="flex gap-3 justify-center ">
                 <div>
-                    <img className="w-80" src={productdetails.image} alt="" />
+                    <img
+                        className="w-[400px] rounded-2xl "
+                        src={productdetails.image}
+                        alt=""
+                    />
                 </div>
-                <div className="mt-12 w-72">
+                <div className="mt-1 w-72">
                     <h1 className="text-3xl font-semibold">
                         {productdetails.title}
                     </h1>

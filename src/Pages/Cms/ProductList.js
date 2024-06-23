@@ -42,7 +42,11 @@ const ProductList = () => {
             <h1 className="text-2xl font-semibold mb-4 ml-2">Product List</h1>
             <div className="flex justify-end flex-row-reverse gap-4 ml-2">
                 {productList.length === 0 ? (
-                    <h1 className="text-3xl ">No Products</h1>
+                    <div className="text-center w-full">
+                        <h1 className="text-3xl font-semibold ">
+                            No Products{" "}
+                        </h1>
+                    </div>
                 ) : (
                     productList.map((item) => (
                         <div

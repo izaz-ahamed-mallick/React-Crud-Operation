@@ -24,12 +24,13 @@ const Update = () => {
                     `/product/detail/${id}`
                 );
                 const productData = response.data;
-                setProduct(productData);
-                // Populate the form fields
-                setValue("title", productData.data.title);
-                setValue("desc", productData.data.description);
-                setValue("file", productData.data.image);
-                // Handle file input separately if needed
+                if (productData !== null) {
+                    setProduct(productData);
+                    // Populate the form fields
+                    setValue("title", productData?.data?.title);
+                    setValue("desc", productData?.data?.description);
+                    setValue("file", productData?.data?.image);
+                }
             } catch (error) {
                 console.log(error);
                 toast.error("Failed to fetch product details");
@@ -41,6 +42,7 @@ const Update = () => {
         }
     }, [id, setValue]);
 
+    // Fetch for update
     const onSubmit = async (data) => {
         const updatedProduct = {
             id: id,
