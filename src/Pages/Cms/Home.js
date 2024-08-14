@@ -1,23 +1,31 @@
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
 import Login from "../Auth/Login/Login";
-import HomeImg from "../../Images/Home.png";
+import { AuthContext } from "../../Context/AuthProvider";
 
 const Home = () => {
-    return (
-        <div className="bg-gradient-to-r from-fuchsia-500 to-cyan-500 w-full h-screen flex items-center justify-center ">
-            <div className="min-h-screen flex flex-col md:flex-row items-center justify-center  p-4">
-                <div className="md:w-1/2 p-4 flex justify-center">
-                    <img
-                        src={HomeImg} // Replace with your image URL
-                        alt="Decorative"
-                        className="rounded-lg shadow-lg"
-                    />
-                </div>
-                <div className="md:w-1/2 p-4">
-                    <Login />
-                </div>
-            </div>
+    const { isAuthenticated } = useContext(AuthContext);
+
+    return isAuthenticated ? (
+        <div
+            style={{
+                background: "linear-gradient(to right, #ff7e5f, #feb47b)",
+            }}
+            className="text-center  flex justify-center items-center flex-col  h-screen"
+        >
+            <h1 className="text-2xl font-bold mb-4">
+                You are already logged in!
+            </h1>
+            <p className="mb-4">You can view the product list now.</p>
+            <Link
+                to="/productlist"
+                className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
+            >
+                View Product List
+            </Link>
         </div>
+    ) : (
+        <Login />
     );
 };
 

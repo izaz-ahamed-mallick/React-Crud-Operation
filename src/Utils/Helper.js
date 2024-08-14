@@ -16,6 +16,7 @@ export const profile_pic = (media) => {
 };
 axiosInstance.interceptors.request.use(
     async function (config) {
+        console.log(config);
         const token =
             localStorage.getItem("token") || sessionStorage.getItem("token");
         if (token !== null || token !== undefined) {
