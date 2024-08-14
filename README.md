@@ -1,70 +1,84 @@
-# Getting Started with Create React App
+# React CRUD Operation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+[Live Demo](https://react-crud-operation-peach.vercel.app/)
 
-## Available Scripts
+## Overview
+This is a simple and elegant CRUD (Create, Read, Update, Delete) application built with React. It allows users to manage a list of products with functionalities to add, view, update, and delete products.
 
-In the project directory, you can run:
+## Features
+- **Create Product:** Users can add new products with details such as title, description, and image.
+- **Read Product:** View a list of all products, along with details of individual products.
+- **Update Product:** Edit the details of existing products.
+- **Delete Product:** Remove products from the list with a confirmation dialog.
+- **Authentication Check:** The application checks if a user is authenticated and provides access to product management features accordingly.
+- **Responsive Design:** The application is fully responsive and provides a seamless experience across devices.
+- **Loader Component:** A loader is displayed during data fetching to enhance user experience.
+- **Attractive UI:** The application uses modern UI elements with gradient backgrounds for a visually appealing interface.
 
-### `npm start`
+## Tech Stack
+- **React** - A JavaScript library for building user interfaces.
+- **React Hook Form** - For managing form state and validation.
+- **React Router DOM** - For routing and navigation.
+- **Axios** - For making HTTP requests to the backend.
+- **Tailwind CSS** - For styling the application.
+- **React Toastify** - For showing toast notifications.
+- **Vercel** - For deploying the live version of the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Installation
+To get started with the React CRUD Operation app locally, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone the repository:
+    ```bash
+    git clone https://github.com/your-username/react-crud-operation.git
+    ```
+2. Navigate to the project directory:
+    ```bash
+    cd react-crud-operation
+    ```
+3. Install dependencies:
+    ```bash
+    npm install
+    ```
+4. Start the development server:
+    ```bash
+    npm start
+    ```
 
-### `npm test`
+Open your browser and visit: [http://localhost:3000](http://localhost:3000)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Deployment
+The application is deployed on Vercel. You can view the live application at:
+[https://react-crud-operation-peach.vercel.app/](https://react-crud-operation-peach.vercel.app/)
 
-### `npm run build`
+## Technologies Used
+- **Frontend:** React, Tailwind CSS
+- **Backend:** (Specify backend if applicable, e.g., Node.js, Express)
+- **Database:** (Specify database if applicable, e.g., MongoDB, PostgreSQL)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Contributing
+If you’d like to contribute to the project, please follow these guidelines:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Fork the repository.
+2. Create a new branch for your feature or bug fix:
+    ```bash
+    git checkout -b feature/your-feature
+    ```
+3. Commit your changes:
+    ```bash
+    git commit -am 'Add new feature or fix bug'
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature/your-feature
+    ```
+5. Create a new Pull Request.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-### `npm run eject`
+## Contact
+For any questions or feedback, please reach out to:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- **Email:** [izazahamedmallick98@gmail.com](mailto:izazahamedmallick98@gmail.com)
+- **LinkedIn:** [Izaz Ahamed Mallick](https://www.linkedin.com/in/izaz-ahamed-mallick-974059208/)
+- **GitHub:** [Izaz-ahamed-mallick](https://github.com/izaz-ahamed-mallick)
