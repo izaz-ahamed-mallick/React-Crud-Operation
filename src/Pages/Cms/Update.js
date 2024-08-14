@@ -91,7 +91,7 @@ const Update = () => {
     }
 
     return (
-        <div className="mt-20">
+        <div className="mt-20 min-h-screen">
             <button
                 onClick={() => navigate(-1)}
                 className="border px-4 py-1 m-4  hover:text-blue-500 hover:border-blue-500"
